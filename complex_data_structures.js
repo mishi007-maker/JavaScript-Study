@@ -49,7 +49,8 @@ let company = {
 };
 
 
-
+console.log(Object.keys(company)) //['name', 'founded', 'location', 'departments', 'projects']
+console.log(Object.keys(company.departments[1])) // ['name', 'head', 'employees']
 
 //   a)PostgreSQL
 console.log(company.departments[0].employees[1].skills[2])  
@@ -57,5 +58,5 @@ console.log(company.departments[0].employees[1].skills[2])
 //   b)Brand Strategy
 console.log(company.departments[1].employees[1].skills[2]) 
 
-//   c)React
+//   c)React 
 console.log(company.departments[0].employees[0].skills[1])  

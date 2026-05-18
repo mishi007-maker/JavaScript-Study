@@ -984,12 +984,13 @@ let pops=[
 	// pops = { “0-50m” : 216, “51-100m” : 16, ” >100m” : 13 }
 
 
-const popCounts= { "0-50m": 0, "51-100m": 0, ">100m": 0 }
+let popCounts= { "0-50m": 0, "51-100m": 0, ">100m": 0 }
 
-for (let i = 0; i < pops.length; i++) { const pop = pops[i].population
+for (let i = 0; i < pops.length; i++) { 
+const pop = pops[i].population
 
-if (pop <= 50000000) { popCounts["0-50m"]++; } 
-else if (pop <= 100000000) { popCounts["51-100m"]++; }  
-else { popCounts[">100m"]++; } }
+if (pop <= 50000000) { popCounts["0-50m"]++ } 
+else if (pop <= 100000000) { popCounts["51-100m"]++ }  
+else { popCounts[">100m"]++} }
 
 console.log(popCounts)
