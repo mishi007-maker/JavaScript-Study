@@ -2,16 +2,16 @@
 // the program outputs the age in terms of years,months,days 
 
 // Input from user
-let birth_Day = Number(prompt("Enter birth day:"));
-let birth_Month = Number(prompt("Enter birth month:"));
-let birth_Year = Number(prompt("Enter birth year:"));
+let birth_Day = Number(prompt("Enter birth day:"))
+let birth_Month = Number(prompt("Enter birth month:"))
+let birth_Year = Number(prompt("Enter birth year:"))
 
-let current_Day = Number(prompt("Enter current day:"));
-let current_Month = Number(prompt("Enter current month:"));
-let current_Year = Number(prompt("Enter current year:"));
+let current_Day = Number(prompt("Enter current day:"))
+let current_Month = Number(prompt("Enter current month:"))
+let current_Year = Number(prompt("Enter current year:"))
 
 // Days in each month
-let daysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31];
+let daysInMonth = [31,28,31,30,31,30,31,31,30,31,30,31]
 
 // Checking for leap year
 if ((current_Year % 4 == 0 && current_Year % 100 != 0) || (current_Year % 400 == 0)) {
