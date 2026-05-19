@@ -34,7 +34,5 @@ let months = current_Month - birth_Month
 
 // Calculating years
 let years = current_Year - birth_Year
-
-// Output
 console.log("Age = " +years+ " years " + months + " months " + days +" days")
 
