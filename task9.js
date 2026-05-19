@@ -7,9 +7,13 @@
 // ****
 // *****.....
 
-rows=Number(prompt("Enter number: "))
+let number=Number(prompt("Enter a random number: "))
 
-for( i=0; i< rows.length;i++){
-    console.log("*" * i)
+for(let i=1; i<=number;i++){
+    let rows = ""
+for (let j=1 ; j<=i; j++){
+    rows +="*"
+}
+console.log(rows)
 }
 

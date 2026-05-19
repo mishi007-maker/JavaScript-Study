@@ -5,16 +5,19 @@
 // For example, if the speed is 80, it should print: “Points: 2”. 
 // If the driver gets more than 12 points, the function should print: “License suspended”.
 
-speed = Number(prompt("Enter car speed"))
-limit = 70
+let speed = Number(prompt("Enter car speed"))
+let limit = 70
 
-if (speed <= limit){
-console.log("Ok")}
-else{
-points = (speed - limit) / 5
-if (points > 12){
-console.log("License suspended")}
-else{
-console.log(`Point: ${points}`)
+if (speed <= limit) {
+    console.log("Ok")
 }
+else {
+    let points_exceeded = speed - limit
+    points = Math.ceil((points_exceeded) / 5)
+    if (points > 12) {
+        console.log("License suspended")
+    }
+    else {
+        console.log(`Point: ${points}`)
+    }
 }
