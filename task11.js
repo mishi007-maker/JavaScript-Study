@@ -21,7 +21,7 @@ if ((current_Year % 4 == 0 && current_Year % 100 != 0) || (current_Year % 400 ==
 // Calculating days
 if (birth_Day > current_Day) {
     current_Day = current_Day + daysInMonth[current_Month - 2]
-    current_Month--
+    current_Month-- //we reduce the array because it starts with 0 index
 }
 let days = current_Day - birth_Day
 

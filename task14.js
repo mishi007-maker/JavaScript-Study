@@ -6,25 +6,15 @@ let num1, num2;
 
 
 while (true) {
-    num1 = prompt("Enter first number:");
+num1 = prompt("Enter first number:")
+num2 = prompt("Enter second number:")
 
-    if (!isNaN(num1) && num1 !== "") {
-        num1 = parseFloat(num1)
+    if ((!isNaN(num1) && num1 !== "") && (!isNaN(num2) && num2 !== "")) {
+        num1 = parseFloat(num1) 
+        num2 = parseFloat(num2)
         break
     } else {
-        alert("invalid character entered")
-    }
-}
-
-
-while (true) {
-    num2 = prompt("Enter second number:")
-
-    if (!isNaN(num2) && num2 !== "") {
-        num2 = parseFloat(num2)
-        break;
-    } else {
-        alert("invalid character entered")
+        alert("invalid character entered. Please re-enter")
     }
 }
 
